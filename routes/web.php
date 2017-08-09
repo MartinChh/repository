@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/test', 'TestController@index');
-Route::get('create','inputter@index');
-Route::post('store','inputter@store');
+Route::get('create','DatabaseHandle@index');
+Route::post('store','DatabaseHandle@store');

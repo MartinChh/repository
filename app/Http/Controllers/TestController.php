@@ -7,13 +7,8 @@ class TestController extends Controller
 {
 	function index()
 	{
-		$vec=\App\Test::all();
-
-		//echo '<pre>';
-		//print_r($movies);
-		//echo '</pre>';
-
-		return view('test.index', ['veci' => $vec]);
+		$item=\App\Test::all();
+		return view('test.index', ['items' => $item]);
 	}
 
 }
